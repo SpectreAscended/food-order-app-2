@@ -4,16 +4,16 @@ import Meals from './components/Meals/Meals';
 import Cart from './components/Cart/Cart';
 
 const App = () => {
-  const [modalOpen, setModalOpen] = useState(false);
+  const [cartIsShown, setCartIsShown] = useState(false);
 
-  const modalHandler = () => {
-    setModalOpen(open => (open = !open));
+  const cartHandler = () => {
+    setCartIsShown(open => (open = !open));
   };
 
   return (
     <>
-      {modalOpen && <Cart onOpenCart={modalHandler} />}
-      <Header onOpenCart={modalHandler} />
+      {cartIsShown && <Cart onToggleCart={cartHandler} />}
+      <Header onToggleCart={cartHandler} />
       <main>
         <Meals />
       </main>
