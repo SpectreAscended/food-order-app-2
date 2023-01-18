@@ -2,7 +2,7 @@ import React from 'react';
 import DUMMY_MEALS from '../../store/dummydata';
 import classes from './AvailableMeals.module.css';
 import Card from '../UI/Card';
-import MealItem from './MealItem';
+import MealItem from './MealItem/MealItem';
 
 const AvailableMeals = () => {
   console.log(DUMMY_MEALS);
