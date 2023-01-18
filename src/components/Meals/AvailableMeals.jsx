@@ -5,8 +5,6 @@ import Card from '../UI/Card';
 import MealItem from './MealItem/MealItem';
 
 const AvailableMeals = () => {
-  console.log(DUMMY_MEALS);
-
   const mealsList = DUMMY_MEALS.map(item => (
     <MealItem
       key={item.id}
